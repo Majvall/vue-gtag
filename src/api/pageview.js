@@ -31,11 +31,11 @@ export default (param) => {
     template = param;
   }
 
-  if (template.page_location == null) {
+  if (template.page_location === undefined) {
     template.page_location = window.location.href;
   }
 
-  if (template.send_page_view == null) {
+  if (template.send_page_view === undefined) {
     template.send_page_view = true;
   }
 
